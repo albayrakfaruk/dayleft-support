@@ -10,4 +10,4 @@ App Store support + legal pages for [DayLeft](https://dayleft.app).
 | Privacy | https://albayrakfaruk.github.io/dayleft-support/privacy.html |
 | Terms | https://albayrakfaruk.github.io/dayleft-support/terms.html |
 
-Contact: [support@dayleft.app](mailto:support@dayleft.app)
+Contact: [veloratechsystems@gmail.com](mailto:veloratechsystems@gmail.com)
