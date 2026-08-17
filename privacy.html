@@ -23,7 +23,7 @@
     <div class="wrap">
       <div class="brand-mark">DayLeft</div>
       <h1>Privacy Policy</h1>
-      <div class="meta">Effective date: August 9, 2026 · Contact: <a href="mailto:veloratechsystems@gmail.com">veloratechsystems@gmail.com</a></div>
+      <div class="meta">Effective date: August 17, 2026 · Contact: <a href="mailto:veloratechsystems@gmail.com">veloratechsystems@gmail.com</a></div>
     </div>
   </header>
 
@@ -45,7 +45,7 @@
       <ul>
         <li>Your budget and expense entries are stored <strong>on your device</strong>. We do not operate a user account system and we do not sync your spending ledger to our servers.</li>
         <li>We do <strong>not</strong> connect to your bank and we never ask for banking login credentials.</li>
-        <li>We do <strong>not</strong> use third-party analytics SDKs (for example Firebase). We do not run advertising networks.</li>
+        <li>We use <strong>Firebase Analytics</strong> (without advertising ID) and <strong>Firebase Crashlytics</strong> for anonymous product events and crash reports. Expense amounts, notes, and budget figures are not sent. We do not run advertising networks.</li>
         <li>Purchases and subscriptions are processed by <strong>Apple</strong>. We use <strong>RevenueCat</strong> only to check whether your subscription entitlement is active.</li>
         <li>We may ask for <strong>notification permission</strong> only if you enable reminders. Reminders are scheduled locally on your device.</li>
         <li>Contact us anytime at <a href="mailto:veloratechsystems@gmail.com">veloratechsystems@gmail.com</a>.</li>
@@ -72,7 +72,14 @@
         We do not receive your full payment card number. Expense amounts and notes are not sent to RevenueCat.
       </p>
 
-      <h3>3.3 Support communications</h3>
+      <h3>3.3 Product analytics and crash reports (Firebase)</h3>
+      <p>
+        We use Google <strong>Firebase Analytics</strong> and <strong>Firebase Crashlytics</strong> to understand which screens and buttons are used, and to diagnose crashes.
+        Events are anonymous (no user account, no advertising identifier). We do not send expense amounts, notes, category names, or budget numbers.
+        Firebase / Google may process device and app identifiers, coarse usage events, and crash stack traces in order to provide these services.
+      </p>
+
+      <h3>3.4 Support communications</h3>
       <p>
         If you email us at <a href="mailto:veloratechsystems@gmail.com">veloratechsystems@gmail.com</a>, we process the content of your
         message and your email address so we can respond.
@@ -89,7 +96,7 @@
       <ul>
         <li>No bank account credentials or bank transaction imports</li>
         <li>No contacts, photos, microphone, or precise location for the core product</li>
-        <li>No third-party product analytics SDKs</li>
+        <li>No third-party advertising networks or IDFA / ATT tracking</li>
         <li>No sale of your personal information</li>
         <li>No upload of your expense amounts, notes, or budget figures to our servers</li>
       </ul>
@@ -100,6 +107,7 @@
       <ul>
         <li>To provide the App’s features on your device</li>
         <li>To unlock and maintain subscription entitlements</li>
+        <li>To understand how the App is used and to fix crashes (Firebase)</li>
         <li>To respond to support requests</li>
         <li>To comply with law where required</li>
       </ul>
@@ -110,7 +118,7 @@
       <p>Where applicable, we rely on:</p>
       <ul>
         <li><strong>Contract</strong> — providing the App and subscription features you request</li>
-        <li><strong>Legitimate interests</strong> — security and operating subscription entitlement checks, balanced against your rights</li>
+        <li><strong>Legitimate interests</strong> — security, subscription entitlement checks, product analytics and crash diagnosis, balanced against your rights</li>
         <li><strong>Consent</strong> — where required (for example notification permission)</li>
         <li><strong>Legal obligation</strong> — when the law requires us to retain or disclose information</li>
       </ul>
@@ -122,6 +130,7 @@
       <ul>
         <li><strong>Apple</strong> — App Store distribution, payments, and the system notifications infrastructure</li>
         <li><strong>RevenueCat</strong> — subscription entitlement management</li>
+        <li><strong>Google Firebase</strong> — Analytics and Crashlytics</li>
       </ul>
       <p>We do not sell personal information. We may disclose information if required by law or to protect rights and safety.</p>
     </section>
@@ -138,7 +147,7 @@
     <section class="card">
       <h2>9. Security</h2>
       <p>
-        Network calls to processors (Apple / RevenueCat) use platform HTTPS.
+        Network calls to processors (Apple / RevenueCat / Firebase) use platform HTTPS.
         Because core financial entries live on your device, protecting your iPhone passcode / biometrics and
         keeping iOS updated is an important part of overall security.
       </p>
@@ -168,7 +177,7 @@
     <section class="card">
       <h2>12. International transfers</h2>
       <p>
-        Apple and RevenueCat may process subscription-related data in the United States or other countries.
+        Apple, RevenueCat, and Google Firebase may process related data in the United States or other countries.
         Where required, those providers use appropriate safeguards.
       </p>
     </section>
